@@ -9,14 +9,15 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Travel Site</a>
+        <a class="navbar-brand" href="#">"Cool" Travel Site</a>
       </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-        </ul>  
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Newark, NJ</a></li>
+        <li><a href="#">New Brunswick, NJ</a></li>
+        <li><a href="#">Livingston Campus</a></li>
+      </ul>  
     </div>
-   </nav> 
+  </nav> 
 
   <!-- This is for the form area !-->
   <div class="container-fluid">
@@ -41,25 +42,30 @@
       <div class="form-group">
         <input type="text" class="form-control" id="text4" placeholder="Price (optional)">
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" class="btn btn-primary">Search</button>
     </form>
   </div>
-  <div><!--Newark-->
-    <LABEL>Newark</LABEL>
-    <button type="submit" class="btn btn-default">More Information</button>
+  <div class="row-fluid"><!--here are the hidden div's-->
+    <div class="col-md-4">
+    </div>
+    </div class="col-md-8">
+      <div id="divNewark"><!--Newark-->
+        <LABEL>Newark</LABEL>
+        <button type="submit" class="btn btn-info" data-toggle="modal" 
+        data-target="#modalNewark">More Information</button>
+      </div>
+      <div class="hidden" id="divNewBruswick"><!--Camden-->
+        <LABEL>New Brunswick</LABEL>
+        <button type="submit" class="btn btn-info" data-toggle="modal" 
+          data-target="#modalNewBrunswick">More Information</button>
+      </div>
+      <div class="hidden" id="divLivingston" data-toggle="modal" 
+          data-target="#modalLivingstion"><!--Livingston-->
+        <LABEL>Livingston</LABEL>
+        <button type="submit" class="btn btn-info" >More Information</button>
+      </div>
+    </div> 
   </div>
-  <div class="hidden"><!--Camden-->
-    <LABEL>Camden</LABEL>
-    <button type="submit" class="btn btn-default">More Information</button>
-  </div>
-  <div class="hidden"><!--Livingston-->
-    <LABEL>Livingston</LABEL>
-    <button type="submit" class="btn btn-default">More Information</button>
-  </div>
-
-
-
-  <div class="nav-buffer"></div>
   <!-- This is for the carousel !-->
   <div class='container-fluid'>
     <div class="row-fluid">
@@ -107,11 +113,75 @@
         </a>
       </div>
 
-     
-
-      <div class="container">
-        
+    <!--modals go here-->
+     <div class="modal fade" id="modalNewark" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Newak, NJ</h4>
+          </div>
+          <div class="modal-body">
+            <h4>Newark Hotels<h4>
+            <ul>
+              <li><a href="http://rthotel.com/about/the-robert-treat-hotel/">Best Western Plus Robert Treat Hotel</a></li>
+              <li><a href="http://www.wyndham.com/hotels/new-jersey/newark/wyndham-garden-newark-airport/hotel-overview?hotel_id=EWRAP&cid=whg_wyn_ggl_br&wid=ps:br_whg&002=2195185&004=9136729342&005=6476281487&006=49029064342&007=Search&008=&025=c&026=">Wyndham Garden Hotel</a></li>
+              <li><a href="http://www.marriott.com/hotel-search/newark.hotels.new-jersey.united-states.springhill-suites.travel/">SpringHill Suites</a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="modal fade" id="modalLivingstion" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Livingston Campus</h4>
+          </div>
+          <div class="modal-body">
+            <h4>Livingston Campus Hotels<h4>
+            <ul>
+              <li><a href="http://www.extendedstayamerica.com/hotels/nj/piscataway?mid=ps-nbran-geo-goo-">Extended Stay</a></li>
+              <li><a href="https://www.motel6.com/en/motels.1084.html/?pid=google:brand&utm_medium=cpc&utm_source=google&utm_campaign=brand">Motel</a></li>
+              <li><a href="http://www.hilton.com/search/es/us/nj/piscataway/0/00000000000/0/0/0/0/30?wt.srch=1">Embassy Suites</a></li>
+            </ul>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="divNewBruswick" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">New Brunswick, NJ</h4>
+          </div>
+          <div class="modal-body">
+            <h4><a href=""></a><h4>
+            <ul>
+              <li><a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=The+Heldrich"></a></li>
+              <li><a href="http://www.starwoodhotels.com/sheraton/property/overview/index.html?propertyID=1137&language=en_US"></a></li>
+              <li><a href="http://www3.hilton.com/en/hotels/new-jersey/hilton-east-brunswick-hotel-and-executive-meeting-center-EWRBHHF/index.html"></a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
   <!-- jquery CDN
         BS javascript CDN
