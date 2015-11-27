@@ -20,8 +20,8 @@ $(document).ready(function(){
     console.log(checkout);
     console.log(city);
 
-    if (city == "Newark") {
-      alert("Please enter ...");
+    if (checkin === "") {
+      alert("Hello");
     }
 
     // var city2 = city.toLowerCase();
