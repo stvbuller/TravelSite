@@ -16,16 +16,29 @@ $(document).ready(function(){
     var city = $("#city").val().trim();
     var checkin = $("#checkin").val().trim();
     var checkout = $("#checkout").val().trim();
+    var validCity = false;
+    var validTimeIn = false;
+    var validTimeOut = false;
     console.log(checkin);
     console.log(checkout);
     console.log(city);
 
-    <!--forces user to enter in city, checkin and checkout-->
-    if (city == "" || checkin == "" || checkout == "") {
-      alert("Please enter Newark, Livingston, or New Brunswick, a check in date and a check out date.")
+    //forces user to enter in city, checkin and checkout//
+    if (city === "New Brunswick" || city === "Newark" || city === "Livingston") {
+      validCity = true;
     }
 
-    <!--when entering city remove class of hidden respective div-->
+    if (checkin != "" && checkout != "") {
+      validTimeIn = true, validTimeOut = true;}
+    
+
+    if (validCity == false || validTimeIn == true || validTimeOut == true) {
+      alert("Please enter Newark, Livingston, or New Brunswick, a check in date and a check out date.");
+    }
+
+
+
+    //when entering city remove class of hidden respective div//
     if (city == "Newark") {
       $("#divN").removeClass('hidden');
     }
