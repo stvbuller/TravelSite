@@ -32,8 +32,9 @@ $(document).ready(function(){
       validTimeIn = true, validTimeOut = true;}
     
 
-    if (validCity == false || validTimeIn == true || validTimeOut == true) {
+    if (validCity == false || validTimeIn == false || validTimeOut == false) {
       alert("Please enter Newark, Livingston, or New Brunswick, a check in date and a check out date.");
+      return;
     }
 
 
