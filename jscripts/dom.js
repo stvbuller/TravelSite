@@ -13,8 +13,17 @@ $(document).ready(function(){
 
   
 
-    var city = $("#text1").val().trim();
+    var city = $("#city").val().trim();
+    var checkin = $("#checkin").val().trim();
+    var checkout = $("#checkout").val().trim();
+    console.log(checkin);
+    console.log(checkout);
     console.log(city);
+
+    if (city == "Newark") {
+      alert("Please enter ...");
+    }
+
     // var city2 = city.toLowerCase();
     // console.log(city2);
     //var isDuplicate = false;
