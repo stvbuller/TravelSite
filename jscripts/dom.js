@@ -20,24 +20,17 @@ $(document).ready(function(){
     console.log(checkout);
     console.log(city);
 
+<<<<<<< HEAD
     if (checkin === "") {
       alert("Hello");
+=======
+    <!--forces user to enter in city, checkin and checkout-->
+    if (city == "" || checkin == "" || checkout == "") {
+      alert("Please enter a city, a check in date and a check out date.");
+>>>>>>> 4fc4e12407b3ae12d276801ec360e4d0a7a5c77a
     }
 
-    // var city2 = city.toLowerCase();
-    // console.log(city2);
-    //var isDuplicate = false;
-    // $("td.word-td").each(function() {
-    //   if($(this).text().trim().toLowerCase() === newWord.toLowerCase()) {
-    //     isDuplicate = true;
-    //     return;
-//    if (condition1) {
-//     block of code to be executed if condition1 is true
-// } else if (condition2) {
-//     block of code to be executed if the condition1 is false and condition2 is true
-// } else {
-//     block of code to be executed if the condition1 is false and condition2 is false
-// } 
+    <!--when entering city remove class of hidden respective div-->
     if (city == "Newark") {
       $("#divN").removeClass('hidden');
     }
