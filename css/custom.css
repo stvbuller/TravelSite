@@ -45,3 +45,12 @@ h1{
 #divL{
   margin-top:30px;
 }
+.col-md-3{
+  margin-top: 50px;
+  margin-left:-70px ;
+}
+
+.dropdown-menu{
+  padding-left: 15px;
+
+}
