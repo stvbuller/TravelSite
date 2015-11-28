@@ -11,7 +11,6 @@ $(document).ready(function(){
     $("#divL").addClass('hidden');
     $("#divNB").addClass('hidden');
 
-  
 
     var city = $("#city").val().trim();
     var checkin = $("#checkin").val().trim();
@@ -32,9 +31,15 @@ $(document).ready(function(){
       validTimeIn = true, validTimeOut = true;}
     
 
-    if (validCity == false || validTimeIn == true || validTimeOut == true) {
-      alert("Please enter Newark, Livingston, or New Brunswick, a check in date and a check out date.");
+    if (validCity == false || validTimeIn == false || validTimeOut == false) {
+      //alert("Please enter Newark, Livingston, or New Brunswick, a check in date and a check out date.");
+      $('#modalInputWarning').modal('show') 
+       return;
     }
+
+
+     
+     
 
 
 
@@ -51,6 +56,6 @@ $(document).ready(function(){
        $("#divNB").removeClass('hidden');
     }
 
-});
+  });
 });
 
