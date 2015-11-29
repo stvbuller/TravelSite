@@ -39,46 +39,69 @@
     </form> 
   </div>
 
+
+
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <div class="dropdown">
-          <button class= "dropdown-toggle" type="button" id="ddStarRatings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Star Ratings (optional)<span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="ddStarRatings">
-              <li><a class="dropdown-item" href="http://www.google.com">Four Stars</a></li>
-              <li><a class="dropdown-item" href="#">Three Stars</a></li>
-              <li><a class="dropdown-item" href="#">Two Stars</a></li>
-            </ul>  
-        </div>
-      </div>      
-      <div class="col-md-3"> 
-        <div class="dropdown">
-          <button class= "dropdown-toggle" type="button" id="ddAmenities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Amenities (optional)<span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="ddAmenities">
-            <li><a class="dropdown-item" href="http://www.google.com">Pool</a></li>
-            <li><a class="dropdown-item" href="#">Free Wifi</a></li>
-            <li><a class="dropdown-item" href="#">Free Breakfast</a></li>
-          </ul>  
+        <div class="group starRating">                                                     
+          <span class="primaryLabel">
+            <span class="labelText">Star rating</span>
+          </span>
+          <select name="hotel.rating" aria-invalid="false">
+            <option value="" >No preference</option>
+            <option value="2" >2-star hotels</option>
+            <option value="3" >3-star hotels</option>
+            <option value="4" >4-star hotels</option>
+            <option value="5" >Only 5-star hotels</option>
+          </select>
+          <span class="button offscreen">
+            <span aria-live="assertive" aria-relevant="all" aria-atomic="true">
+            </span>
+            <div></div>
+          </span>
         </div>
       </div>
-      <div class="col-md-3"> 
-        <div class="dropdown">
-          <button class= "dropdown-toggle" type="button" id="ddPrice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Price (optional)<span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="ddPrice">
-            <li><a class="dropdown-item" href="http://www.google.com">$$$$</a></li>
-            <li><a class="dropdown-item" href="#">$$$</a></li>
-            <li><a class="dropdown-item" href="#">$$</a></li>
-          </ul>  
+        <div class="col-md-3">
+          <div class="group starRating">                                            
+            <span class="primaryLabel">
+              <span class="labelText">Amenities</span>
+            </span>
+            <select name="amenity.choices" aria-invalid="false">
+              <option value="" >No preference</option>
+              <option value="2" >Free Wifi</option>
+              <option value="3" >Free Breakfast</option>
+              <option value="4" >Pool</option>
+              <option value="5" >Gym</option>
+            </select>
+            <span class="button offscreen">
+              <span aria-live="assertive" aria-relevant="all" aria-atomic="true">
+              </span>
+              <div></div>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="group starRating">                                            
+            <span class="primaryLabel">
+              <span class="labelText">Price</span>
+            </span>
+            <select name="hotel.rates" aria-invalid="false">
+              <option value="" >No preference</option>
+              <option value="2" >$$$$</option>
+              <option value="3" >$$$</option>
+              <option value="4" >$$</option>
+              <option value="5" >$</option>
+            </select>
+            <span class="button offscreen">
+              <span aria-live="assertive" aria-relevant="all" aria-atomic="true">
+              </span>
+              <div></div>
+            </span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
 <!--starting at line 98 are the hidden div's-->
@@ -105,7 +128,7 @@
   <!-- This is for the carousel !-->
   <div class='container-fluid'>
     <div class="row-fluid">
-      <div class="col-xs-12">
+      <div class="col-md-10 col-md-offset-1">
       <h1>Great Winter Getaways</h1>
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->

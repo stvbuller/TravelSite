@@ -58,3 +58,21 @@ h1{
 .dropdown-item{
   margin-left: -20px;
 }
+
+h1{
+  margin-top: 55px;
+  margin-bottom: 60px;
+}
+
+select {
+  max-height: 300px;
+}
+
+/*.carousel-inner > .item > img{
+       width:70%;
+       height:70%;
+     }*/
+
+.labelText{
+  font-size: 20px;
+}     
