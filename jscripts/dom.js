@@ -56,6 +56,29 @@ $(document).ready(function(){
        $("#divNB").removeClass('hidden');
     }
 
+  
   });
-});
+  
+  // $('#item1').on('click', function() {
+  //   $('#item0').text('Active');
+  // });
+  
+  // $('#item2').on('click', function() {
+  //   $('#item0').text('Not Listed');
+  // });  
+
+    $('#am1').on('click', function() {
+        $('#am0').text('Free Breakfast');
+      });
+      
+    $('#am2').on('click', function() {
+        $('#am0').text('Free Wifi');
+      });
+
+    $('#am3').on('click', function() {
+        $('#am0').text('Pool'); 
+      });
+
+    });
+
 
