@@ -6,7 +6,7 @@ $(document).ready(function(){
   preventSubmit.preventDefault();
 
 
-    // $("#divL").removeClass('hidden');
+    //hides the divs for each city
     $("#divN").addClass('hidden');
     $("#divL").addClass('hidden');
     $("#divNB").addClass('hidden');
@@ -59,25 +59,32 @@ $(document).ready(function(){
   
   });
   
-  // $('#item1').on('click', function() {
-  //   $('#item0').text('Active');
-  // });
+  //the "remove listing" button on the modal hides the listing
+  $("#removedivN").on("click", function(){
+  $("#divN").addClass('hidden');
+  });
+
+  //the "remove listing" button on the modal hides the listing
+  $("#removedivL").on("click", function(){
+  $("#divL").addClass('hidden');
+  });
   
-  // $('#item2').on('click', function() {
-  //   $('#item0').text('Not Listed');
-  // });  
+  //the "remove listing" button on the modal hides the listing
+  $("#removedivNB").on("click", function(){
+  $("#divNB").addClass('hidden');
+  });
 
-    $('#am1').on('click', function() {
-        $('#am0').text('Free Breakfast');
-      });
+    // $('#am1').on('click', function() {
+    //     $('#am0').text('Free Breakfast');
+    //   });
       
-    $('#am2').on('click', function() {
-        $('#am0').text('Free Wifi');
-      });
+    // $('#am2').on('click', function() {
+    //     $('#am0').text('Free Wifi');
+    //   });
 
-    $('#am3').on('click', function() {
-        $('#am0').text('Pool'); 
-      });
+    // $('#am3').on('click', function() {
+    //     $('#am0').text('Pool'); 
+    //   });
 
     });
 
