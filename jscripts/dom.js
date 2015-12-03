@@ -61,17 +61,17 @@ $(document).ready(function(){
   
   //the "remove listing" button on the modal hides the listing
   $("#removedivN").on("click", function(){
-  $("#divN").addClass('hidden');
+    $("#divN").addClass('hidden');
   });
 
   //the "remove listing" button on the modal hides the listing
   $("#removedivL").on("click", function(){
-  $("#divL").addClass('hidden');
+    $("#divL").addClass('hidden');
   });
   
   //the "remove listing" button on the modal hides the listing
   $("#removedivNB").on("click", function(){
-  $("#divNB").addClass('hidden');
+    $("#divNB").addClass('hidden');
   });
 
     // $('#am1').on('click', function() {
