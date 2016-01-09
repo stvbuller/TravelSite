@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
   <title>"Cool" Destinations</title>
@@ -6,106 +6,101 @@
   <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">"Cool" Travel Site</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="http://www.newark.rutgers.edu/?utm_source=uwide_sliver&utm_medium=web&utm_campaign=uwide_sliver">Newark, NJ</a></li>
-        <li><a href="http://newbrunswick.rutgers.edu/">New Brunswick, NJ</a></li>
-        <li><a href="http://www.camden.rutgers.edu/?utm_source=uwide_sliver&utm_medium=web&utm_campaign=uwide_sliver">Camden Campus</a></li>
-      </ul>  
-    </div>
-  </nav> 
-
-  <!-- This is for the form area !-->
   <div class="container-fluid">
-    <form class="form-inline" role="form">
-      <div class= "col-md-12" id="top">
-        <div class="form-group">
-          <input type="text" class="form-control" id="city" placeholder="City">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">"Cool" Travel Site</a>
         </div>
-        <div class="form-group">
-          <label id="check_in">Check In</label>
-          <input type="date" class="form-control" id="checkin">
-        </div>
-        <div class="form-group" >
-          <label id="check_out">Check Out</label>
-          <input type="date" class="form-control" id="checkout">
-        </div>
-        <button type="submit" class="btn btn-primary" id="search">Search</button>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="http://www.newark.rutgers.edu/?utm_source=uwide_sliver&utm_medium=web&utm_campaign=uwide_sliver">Newark, NJ</a></li>
+          <li><a href="http://newbrunswick.rutgers.edu/">New Brunswick, NJ</a></li>
+          <li><a href="http://www.camden.rutgers.edu/?utm_source=uwide_sliver&utm_medium=web&utm_campaign=uwide_sliver">Camden Campus</a></li>
+        </ul>  
       </div>
-    </form> 
-  </div>
-
-
-
-  <div class="container">
+    </nav> 
+  <!-- This is for the form area !-->
     <div class="row">
-      <div class="col-md-3">
-        <div class="group starRating">                                                     
-          <span class="primaryLabel">
-            <span class="labelText">Star rating</span>
-          </span>
-          <select name="hotel.rating" aria-invalid="false">
-            <option value="" >No preference</option>
-            <option value="2" >2-star hotels</option>
-            <option value="3" >3-star hotels</option>
-            <option value="4" >4-star hotels</option>
-            <option value="5" >Only 5-star hotels</option>
-          </select>
-          <span class="button offscreen">
-            <span aria-live="assertive" aria-relevant="all" aria-atomic="true">
-            </span>
-            <div></div>
-          </span>
-        </div>
-      </div>
-        <div class="col-md-3">
-          <div class="group starRating">                                            
-            <span class="primaryLabel">
-              <span class="labelText">Amenities</span>
-            </span>
-            <select name="amenity.choices" aria-invalid="false">
-              <option value="" >No preference</option>
-              <option value="2" >Free Wifi</option>
-              <option value="3" >Free Breakfast</option>
-              <option value="4" >Pool</option>
-              <option value="5" >Gym</option>
-            </select>
-            <span class="button offscreen">
-              <span aria-live="assertive" aria-relevant="all" aria-atomic="true">
-              </span>
-              <div></div>
-            </span>
+      <div class="col-md-12">
+        <form class="form-inline" role="form">
+          <div class="row">
+            <div class="col-md-12" id="top">
+              <div class="form-group">
+                <input type="text" class="form-control" id="city" placeholder="City">
+              </div>
+              <div class="form-group">
+                <label id="check_in">Check In</label>
+                <input type="date" class="form-control" id="checkin">
+              </div>
+              <div class="form-group" >
+                <label id="check_out">Check Out</label>
+                <input type="date" class="form-control" id="checkout">
+              </div>
+              <button type="submit" class="btn btn-primary" id="search">Search</button>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="group starRating">                                            
-            <span class="primaryLabel">
-              <span class="labelText">Price</span>
-            </span>
-            <select name="hotel.rates" aria-invalid="false">
-              <option value="" >No preference</option>
-              <option value="2" >$$$$</option>
-              <option value="3" >$$$</option>
-              <option value="4" >$$</option>
-              <option value="5" >$</option>
-            </select>
-            <span class="button offscreen">
-              <span aria-live="assertive" aria-relevant="all" aria-atomic="true">
-              </span>
-              <div></div>
-            </span>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="group starRating">                                                     
+                <span class="primaryLabel">
+                  <span class="labelText">Star rating</span>
+                </span>
+                <select name="hotel.rating" aria-invalid="false">
+                  <option value="" >No preference</option>
+                  <option value="2" >2-star hotels</option>
+                  <option value="3" >3-star hotels</option>
+                  <option value="4" >4-star hotels</option>
+                  <option value="5" >Only 5-star hotels</option>
+                </select>
+                <span class="button offscreen">
+                  <span aria-live="assertive" aria-relevant="all" aria-atomic="true">
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="group starRating">                                            
+                <span class="primaryLabel">
+                  <span class="labelText">Amenities</span>
+                </span>
+                <select name="amenity.choices" aria-invalid="false">
+                  <option value="" >No preference</option>
+                  <option value="2" >Free Wifi</option>
+                  <option value="3" >Free Breakfast</option>
+                  <option value="4" >Pool</option>
+                  <option value="5" >Gym</option>
+                </select>
+                <span class="button offscreen">
+                  <span aria-live="assertive" aria-relevant="all" aria-atomic="true">
+                  </span>
+                </span>
+              </div>
+            </div>
+             <div class="col-md-3">
+              <div class="group starRating">                                            
+                <span class="primaryLabel">
+                  <span class="labelText">Price</span>
+                </span>
+                <select name="hotel.rates" aria-invalid="false">
+                  <option value="" >No preference</option>
+                  <option value="2" >$$$$</option>
+                  <option value="3" >$$$</option>
+                  <option value="4" >$$</option>
+                  <option value="5" >$</option>
+                </select>
+                <span class="button offscreen">
+                  <span aria-live="assertive" aria-relevant="all" aria-atomic="true">
+                  </span>
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
-
 
 <!--starting at line 98 are the hidden div's-->
-
+    <div class="row">
       <div class="col-md-6">
         <div class="hidden" id="divN"><!--Newark-->
           <LABEL>Newark</LABEL>
@@ -122,146 +117,143 @@
             data-target="#modalLivingston">More Information</button>
         </div>
       </div> 
-     
-  </div>
+    </div>
+
 
   <!-- This is for the carousel !-->
-  <div class='container-fluid'>
-    <div class="row-fluid">
+    <div class="row">
       <div class="col-md-10 col-md-offset-1">
-      <h1>Great Winter Getaways</h1>
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <h1>Great Winter Getaways</h1>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="http://rumaps.rutgers.edu/sites/rumaps/files/newbldg4.jpg" alt="...">
-            <div class="carousel-caption">
-
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="http://rumaps.rutgers.edu/sites/rumaps/files/newbldg4.jpg" alt="...">
+              <div class="carousel-caption">
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Old_Queens_Rutgers.jpg" alt="...">
-            <div class="carousel-caption">
-              ...
+            <div class="item">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Old_Queens_Rutgers.jpg" alt="...">
+              <div class="carousel-caption">
+                ...
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Rutgers-Newark_Arch_2005.JPG" alt="...">
-            <div class="carousel-caption">
-              ...
+            <div class="item">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Rutgers-Newark_Arch_2005.JPG" alt="...">
+              <div class="carousel-caption">
+                ...
+              </div>
             </div>
+            ...
           </div>
-          ...
-        </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-    <!--modals go here-->
-     <div class="modal fade" id="modalNewark" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Newark, NJ</h4>
-          </div>
-          <div class="modal-body">
-            <h4>Newark Hotels<h4>
-            <ul>
-              <li><a href="http://rthotel.com/about/the-robert-treat-hotel/">Best Western Plus Robert Treat Hotel</a></li>
-              <li><a href="http://www.wyndham.com/hotels/new-jersey/newark/wyndham-garden-newark-airport/hotel-overview?hotel_id=EWRAP&cid=whg_wyn_ggl_br&wid=ps:br_whg&002=2195185&004=9136729342&005=6476281487&006=49029064342&007=Search&008=&025=c&026=">Wyndham Garden Hotel</a></li>
-              <li><a href="http://www.marriott.com/hotel-search/newark.hotels.new-jersey.united-states.springhill-suites.travel/">SpringHill Suites</a></li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-warning" id="removedivN">Remove Listing</button>
-
-          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" id="modalLivingston" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Livingston Campus</h4>
-          </div>
-          <div class="modal-body">
-            <h4>Livingston Campus Hotels<h4>
-            <ul>
-              <li><a href="http://www.extendedstayamerica.com/hotels/nj/piscataway?mid=ps-nbran-geo-goo-">Extended Stay</a></li>
-              <li><a href="https://www.motel6.com/en/motels.1084.html/?pid=google:brand&utm_medium=cpc&utm_source=google&utm_campaign=brand">Motel</a></li>
-              <li><a href="http://www.hilton.com/search/es/us/nj/piscataway/0/00000000000/0/0/0/0/30?wt.srch=1">Embassy Suites</a></li>
-            </ul>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-warning" id="removedivL">Remove Listing</button>
-
-          </div>
+  <!--modals go here-->
+  <div class="modal fade" id="modalNewark" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Newark, NJ</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Newark Hotels</h4>
+          <ul>
+            <li><a href="http://rthotel.com/about/the-robert-treat-hotel/">Best Western Plus Robert Treat Hotel</a></li>
+            <li><a href="http://www.wyndham.com/hotels/new-jersey/newark/wyndham-garden-newark-airport/hotel-overview?hotel_id=EWRAP&cid=whg_wyn_ggl_br&wid=ps:br_whg&002=2195185&004=9136729342&005=6476281487&006=49029064342&007=Search&008=&025=c&026=">Wyndham Garden Hotel</a></li>
+            <li><a href="http://www.marriott.com/hotel-search/newark.hotels.new-jersey.united-states.springhill-suites.travel/">SpringHill Suites</a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning" id="removedivN">Remove Listing</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" id="modalNewBrunswick" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">New Brunswick, NJ</h4>
-          </div>
-          <div class="modal-body">
-            <h4><a href=""></a><h4>
-            <ul>
-              <li><a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=The+Heldrich">The Heldrich</a></li>
-              <li><a href="http://www.starwoodhotels.com/sheraton/property/overview/index.html?propertyID=1137&language=en_US">Starwood Hotels</a></li>
-              <li><a href="http://www3.hilton.com/en/hotels/new-jersey/hilton-east-brunswick-hotel-and-executive-meeting-center-EWRBHHF/index.html">The Hilton</a></li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-warning" id="removedivNB">Remove Listing</button>
-          </div>
+  <div class="modal fade" id="modalLivingston" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Livingston Campus</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Livingston Campus Hotels</h4>
+          <ul>
+            <li><a href="http://www.extendedstayamerica.com/hotels/nj/piscataway?mid=ps-nbran-geo-goo-">Extended Stay</a></li>
+            <li><a href="https://www.motel6.com/en/motels.1084.html/?pid=google:brand&utm_medium=cpc&utm_source=google&utm_campaign=brand">Motel</a></li>
+            <li><a href="http://www.hilton.com/search/es/us/nj/piscataway/0/00000000000/0/0/0/0/30?wt.srch=1">Embassy Suites</a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning" id="removedivL">Remove Listing</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--input warning model-->
-    <div class="modal fade" id="modalInputWarning" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="myModalLabel">You forgot one of the following:</h3>
-          </div>
-          <div class="modal-body">
-            <h4>Please enter Newark, Livingston, or New Brunswick, a check in date and a check out date.</h4>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+  <div class="modal fade" id="modalNewBrunswick" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">New Brunswick, NJ</h4>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=The+Heldrich">The Heldrich</a></li>
+            <li><a href="http://www.starwoodhotels.com/sheraton/property/overview/index.html?propertyID=1137&language=en_US">Starwood Hotels</a></li>
+            <li><a href="http://www3.hilton.com/en/hotels/new-jersey/hilton-east-brunswick-hotel-and-executive-meeting-center-EWRBHHF/index.html">The Hilton</a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning" id="removedivNB">Remove Listing</button>
         </div>
       </div>
     </div>
+  </div>
+
+  <!--input warning model-->
+  <div class="modal fade" id="modalInputWarning" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="myModalLabel">You forgot one of the following:</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Please enter Newark, Livingston, or New Brunswick, a check in date and a check out date.</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
  
   <!-- jquery CDN
